@@ -1,0 +1,32 @@
+.titulo{
+
+    width: 450px;
+    border-radius: 10px;
+    box-shadow:0 0 50px rgb(255, 255, 255);
+
+
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+
+
+
+}
+.contenedor{
+    margin-left: 88px;
+    justify-content: center;
+
+
+
+
+}
+.izq{
+    float: left;
+
+
+
+
+}
