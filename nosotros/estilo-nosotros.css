@@ -1,0 +1,32 @@
+/* .contenedor-principal {
+
+} */
+
+.cont-img-flotantes {
+    width: 100%;
+    background-color: black;
+    height: 500px;
+}
+
+.cont-img-flotantes h3{
+    color: aqua;
+    text-align: center;
+
+}
+
+.estilo-servicios {
+    background-color: #272727;
+    text-align: center;
+    color: white;
+  }
+  
+  .estilo-servicios h3 {
+    color: #FFFBF7;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+
+

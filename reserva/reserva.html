@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Reserva - Musu Performance</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <!-- <meta name="viewport" content="width=device-width initial-scale=1.0> -->
+
+    <!-- Icono WEB-->
+    <link rel="icon" href="../imagenes/caracol-negro.ico" sizes="50x50">
+    <link rel="icon" href="../imagenes/caracol-negro.ico" sizes="192x192">
+    <link rel="apple-touch-icon" href="../imagenes/caracol-negro.ico">
+
+    <link rel="stylesheet" href="./estilo-reserva.css">
+    <link rel="stylesheet" href="../estilo-general.css">
+    <link rel="stylesheet" href="../fonts.css">              <!--iconos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="overlay"></div>
+
+    <div class="contenedor-navbar">
+        <header>
+            <div class="brand">
+                <img src="../imagenes/logo-vertical-musu-performance-negro.jpg" alt="logo" class="responsive-logo">
+    
+                <div class="menu_bar">
+                    <a href="#" class="btn-menu"><span class="icon-menu"></span></a>
+                </div>
+    
+            </div>
+            <nav>
+                <ul>
+                    <li class="order-6">
+                        <a href="#">
+                        <span class="icon-user-tie"></span>Login</a>
+                    </li>
+                    <li class="order-5">
+                        <a href="../locales/locales.html">
+                        <span class="icon-shop"></span>Locales</a>
+                    </li>
+                    <li class="order-4">
+                        <a href="../nosotros/nosotros.html">
+                        <span class="icon-tree"></span>Nosotros</a>
+                    </li>
+                    <li class="order-3">
+                        <a href="../reserva/reserva.html" style="color: #c62618;">
+                        <span class="icon-address-book"></span>Reserva</a>
+                    </li>
+                    <li class="order-2">
+                        <a href="../tienda/tienda.html">
+                        <span class="icon-cart"></span>Tienda</a>
+                    </li>
+                    <li class="order-1">
+                        <a href="../inicio/index.html">
+                        <span class="icon-home"></span>Inicio</a>
+                    </li>
+                    <li class="icono-navbar order-7">
+                        <ul class="submenu-icono">
+                            <li>
+                                <a href="https://wa.me/message/SG4O7OQNGZRID1" target="_blank">
+                                    <span class="icon-whatsapp"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/musu_performance/" target="_blank">
+                                    <span class="icon-instagram"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:musuperformance@gmail.com" target="_blank">
+                                    <span class="icon-mail4"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/MusuPerformance/" target="_blank">
+                                    <span class="icon-facebook2"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <div class="contenedor-reserva">
+        <div class="cont-res-superior">
+            <div class="cont-res-revision">
+                
+                <h3><span class="icon-address-book"></span>Reserva tu revision</h3>
+                <p>Agenda tu hora para que nuestros mecanicos revisen tu vehiculo</p>
+            </div>
+            <div class="cont-res-servicios">
+                <ul>
+                    <li>
+                        <h4>Servicios</h4>
+                    </li>
+                    <li>
+                        <p>Mantencion por KM</p>
+                    </li>
+                    <li>
+                        <p>Scanner</p>
+                    </li>
+                    <li>
+                        <p>Servicio de Frenos</p>
+                    </li>
+                    <li>
+                        <p>Rectificado de discos <br>
+                           y tambores de frenos</p>
+                    </li>
+                    <li>
+                        <p>Cambio de Embrague</p>
+                    </li>
+                    <li>
+                        <p>Trabajo de culata</p>
+                    </li>
+                    <li>
+                        <p>Ajuste de motor</p>
+                    </li>
+                    <li>
+                        <p>Mecanica General</p>
+                    </li>
+                    <li>
+                        <p>Balanceo</p>
+                    </li>
+                    <li>
+                        <p>Diagnostico</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="cont-res-inferior">
+            <div class="cuadrado-reserva" id="reserva-a">
+                <p>A-1</p>
+            </div>
+            <div class="cuadrado-reserva" id="reserva-b">
+                <p>B-2</p>
+            </div>
+            <div class="cuadrado-reserva" id="reserva-c">
+                <p>C-3</p>
+            </div>
+            <div class="cuadrado-reserva" id="reserva-d">
+                <p>D-4</p>
+            </div>
+            <div class="cuadrado-reserva" id="reserva-e">
+                <p>E-5</p>
+            </div>
+            <div class="cuadrado-reserva" id="reserva-f">
+                <p>F-6</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Hola</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Ingrese su nombre:</p>
+              <input type="text" class="form-control" id="nombre-input">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" id="guardar-btn">Guardar</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    <!-- footer de contacto-->
+    <div class="contac-footer">
+        <div class="container">
+            <div class="row">
+                <!-- Contactos  TODO: MODIFICAR CONTENEDORES CUANDO SEA MENOR A 800PX  -->
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xl-3 redes-sociales">
+                    <h3 class="text-center">Redes sociales</h3>
+                    <ul>
+                        <li>
+                            <span class="icon-whatsapp"></span><p>Whatsapp</p><br>
+                            <a href="https://wa.me/message/SG4O7OQNGZRID1" target="_blank">+56 9 3344 6214</a>
+                        </li>
+                        <li>
+                            <span class="icon-mail4"></span><p>Correo</p><br>
+                            <a href="mailto:musuperformance@gmail.com" target="_blank">musuperformance@gmail.com</a>
+                        </li>
+                        <li>
+                            <span class="icon-location2"></span><p>Ubicacion</p><br>
+                            <a href="https://www.google.com/maps/place/Gral.+Vel%C3%A1squez+1470,+8650459+Renca,+Regi%C3%B3n+Metropolitana" target="_blank">
+                                    General Velásquez 1470, Renca</a>
+                        </li>
+                        <li>
+                            <span class="icon-instagram"></span><p>Instagram</p><br>
+                            <a href="https://www.instagram.com/musu_performance/" target="_blank">musu_performance</a>
+                        </li>
+                        <li>
+                            <span class="icon-facebook2"></span><p>Facebook</p><br>
+                            <a href="https://www.facebook.com/MusuPerformance/" target="_blank">MusuPerformance</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Horario -->
+                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 horarios">
+                    <h3 class="text-center">Horarios de atención</h3>
+                    <ul>
+                        <li>
+                            <div class="dias">Lunes:</div>
+                            <div class="horas">09:00 - 18:00</div>
+                        </li>
+                        <li>
+                            <div class="dias">Martes:</div>
+                            <div class="horas">09:00 - 18:00</div>
+                        </li>
+                        <li>
+                            <div class="dias">Miércoles:</div>
+                            <div class="horas">09:00 - 18:00</div>
+                        </li>
+                        <li>
+                            <div class="dias">Jueves:</div>
+                            <div class="horas">09:00 - 18:00</div>
+                        </li>
+                        <li>
+                            <div class="dias">Viernes:</div>
+                            <div class="horas">09:00 - 18:00</div>
+                        </li>
+                        <li>
+                            <div class="dias">Sábado:</div>
+                            <div class="horas">10:00 - 14:00</div>
+                        </li>
+                        <li class="dias-cerrado">
+                            <div class="dias">Domingo:</div>
+                            <div class="horas">Cerrado</div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="col-sm-12 col-md-12 col-lg-4 col-xl-6 map">
+                    <div class="minimapa-footer">
+                        <h3 class="text-center">Minimapa</h3>
+                        <div class="minimapa-wrapper">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330.795245406962!2d-70.7182176!3d-33.402505700000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c14d5e08209b%3A0x351a803c3145e5cb!2sGral.%20Vel%C3%A1squez%201470%2C%208650459%20Renca%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses-419!2scl!4v1686143024569!5m2!1ses-419!2scl"
+                                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+
+<!-- Footer gris de políticas de cookies-->
+<footer class="site-footer">
+    <div class="site-info">
+        <div class="page-container derechos-reservado">
+            <div>
+                <span>Musu Performance y Cia. Ltda</span>
+            </div>
+            <div>
+                <span class="derechos-footer">@Todos los derechos reservados</span>
+            </div>
+        </div>
+        <div class="page-container creado-por">
+            <div>
+                <span>Página creada por:</span>
+            </div>
+            <div>
+                <a href="https://www.instagram.com/_dani.3x/">@Dani.3x</a>
+                <a href="https://www.instagram.com/strangetruenox19/" style="padding-left: 10px;">@strangetruenox19</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"></script>
+    <script src="./estilo-reserva.js"></script>
+    <script src="../estilo-navbar.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+.contenedor-reserva {
+  padding: 30px;
+  height: auto;
+  background-color: #000;
+  position: relative;
+}
+
+.contenedor-reserva .cont-res-superior { /* Contenedor reserva superior*/
+  display: flex;
+  justify-content: space-between;
+}
+
+.contenedor-reserva .cont-res-superior .cont-res-revision h3 span{
+  padding-right: 10px;
+  font-size: 20px;
+  
+}
+
+.contenedor-reserva .cont-res-superior .cont-res-revision h3{
+  color: white;
+}
+
+.contenedor-reserva .cont-res-superior .cont-res-revision p{
+  color: white;
+}
+
+.contenedor-reserva .cont-res-superior .cont-res-servicios {
+  background-color: red;
+  position: absolute;
+  height: auto;
+  z-index: 2;
+}
+
+.contenedor-reserva .cont-res-superior .cont-res-servicios ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contenedor-reserva .cont-res-superior .cont-res-servicios ul li{
+  display: flex;
+  flex-direction: column;
+}
+
+.contenedor-reserva .cont-res-inferior {
+  background-color: #333333;
+  height: 100%;
+  padding: 40px;
+}
+
+.contenedor-reserva .cont-res-inferior .cuadrado-reserva {
+  background-color: yellow;
+  position: relative;
+  width: 50px;
+  height: auto;
+}
+
+.contenedor-reserva .cont-res-inferior .cuadrado-reserva p {
+  color: red;
+  margin-bottom: 1rem;
+}
+
+.contenedor-reserva .cont-res-inferior .cuadrado-reserva p {
+  color: red;
+}
+
+.contenedor-reserva .cont-res-inferior #reserva-f.cuadrado-reserva p{
+  margin-bottom: 0;
+}
+
+
+
