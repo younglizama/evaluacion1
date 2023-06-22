@@ -29,11 +29,9 @@
       },
     });
   
-    // Imprimir "hola" por consola al seleccionar una imagen
-    $(".cont-img-carrusel").on("click", function () {
-      console.log("Hola");
-    });
+    
   });
+  
   
   
   
