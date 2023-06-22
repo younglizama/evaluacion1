@@ -2,6 +2,16 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: black /* Color de fondo de la barra */
+  }
+  
+  /* Cambiar color del pulgar de la barra de desplazamiento */
+  ::-webkit-scrollbar-thumb {
+    background-color: #991616 !important; /* Color del pulgar */
+  }
+
 html, body {
     overflow-x: hidden;
     padding: 0;
