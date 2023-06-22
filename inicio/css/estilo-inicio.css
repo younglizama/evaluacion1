@@ -120,6 +120,20 @@
 /* -----------------------------------------------------------------------
    TODO: Estilo Servicios
    ----------------------------------------------------------------------- */
+.estilo-servicios {
+  background-color: #000000;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.estilo-servicios h3{
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+}
+
+
+
 :root {
   --white-text: #fff;
 }
@@ -155,7 +169,7 @@
 .contenedor-cards .left-column {
   color: var(--white-text);
   padding: 1rem 2rem 2rem 2rem;
-  max-width: 10rem;
+  width: 25%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -224,13 +238,7 @@
 }
 
 .contenedor-cards .carta h6 {
-  
   text-transform: uppercase;
-
-}
-
-.contenedor-cards .left-column h2 {
-  color: var(--white-text);
 }
 
 .contenedor-cards .right-column {
@@ -241,8 +249,12 @@
   align-items: start;
 }
 
+.contenedor-cards .right-column h2 {
+  font-size: 1.5rem;
+}
+
 .contenedor-cards .right-column p {
-  font-size: .9rem;
+  font-size: .8rem;
   color: var(--black-text)
 }
 
