@@ -150,10 +150,11 @@ $(document).ready(function () {
   const $registerLink = $(".register-link");
   const $btnPopup = $(".btnLogin-popup");
   const $iconoClose = $(".icono-close");
-  let html = $("html");
+  let $contenedorLogin = $(".contenedor-login");
+  let $html = $("html");
   var overlay = $('<div class="overlay"></div>');
 
-  html.remove(overlay);
+  $html.remove(overlay);
 
 
   $registerLink.on("click", function () {
@@ -165,9 +166,11 @@ $(document).ready(function () {
   });
 
   $btnPopup.on("click", function () {
+    $contenedorLogin.addClass("active");
     $wrapper.addClass("active-popup");
 
     $iconoClose.on("click", function () {
+      $contenedorLogin.removeClass("active")
       $wrapper.removeClass("active-popup");
     });
   });

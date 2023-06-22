@@ -601,7 +601,7 @@ header.hidden {   /* Oculta el NAVBAR */
    
     ----------------------------------------------------------------------- */
 .contenedor-login {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     position: fixed;
@@ -609,6 +609,10 @@ header.hidden {   /* Oculta el NAVBAR */
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 3; 
+}
+
+.contenedor-login.active {
+    display: flex;
 }
 .wrapper {
     position: relative;

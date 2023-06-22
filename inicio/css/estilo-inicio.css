@@ -1,7 +1,5 @@
 /* TODO: Imagen Subaru*/
 
-
-
 .contenedor-imagen {
   position: relative;
   z-index: 2;
@@ -127,10 +125,21 @@
 }
 
 .contenedor-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1.5rem;
+  padding: 0 1rem;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  margin-bottom: 3rem;
+}
+
+.contenedor-cards .fila {
   display: flex;
   justify-content: center;
-  height: auto;
   align-items: center;
+  margin-bottom: 1.5rem;
 }
 
 .carta {
@@ -138,9 +147,8 @@
   border-radius: 1rem;
   box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
   display: flex;
-  margin: 1.5rem;
   overflow: hidden;
-  width: auto;
+  width: 100%;
   height: auto;
 }
 
@@ -167,8 +175,56 @@
   background-size: cover;
 }
 
+.contenedor-cards .background3-left-column {
+  background-image: url("../img/servicios-frenos.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contenedor-cards .background4-left-column {
+  background-image: url("../img/servicios-rectificado.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contenedor-cards .background5-left-column {
+  background-image: url("../img/servicios-tambores.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contenedor-cards .background6-left-column {
+  background-image: url("../img/servicios-embrague.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contenedor-cards .background7-left-column {
+  background-image: url("../img/servicios-culata.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contenedor-cards .background8-left-column {
+  background-image: url("../img/servicios-motor.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contenedor-cards .background9-left-column {
+  background-image: url("../img/servicios-balanceo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contenedor-cards .background10-left-column {
+  background-image: url("../img/servicios-general.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .contenedor-cards .carta h6 {
-  letter-spacing: .1rem;
+  
   text-transform: uppercase;
 
 }
@@ -183,7 +239,6 @@
   display: flex;
   flex-direction: column;
   align-items: start;
-  justify-content: space-between;
 }
 
 .contenedor-cards .right-column p {
