@@ -219,6 +219,12 @@
   position: relative;
 }
 
+.contenedor-carrusel .slider h3 {
+  text-align: center;
+  color: #fff;
+  padding-bottom: 20px;
+}
+
 .slider .owl-item.active.center .slider-card {
   transform: scale(1.15);
   opacity: 1;
@@ -256,6 +262,8 @@
 }
 .owl-dots {
   text-align: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
 }
 .owl-dots .owl-dot {
   height: 10px;
