@@ -7,7 +7,7 @@ $(document).ready(function () {
     nav: true,
     autoplay: true,
     mouseDrag: true,
-    autoplayTimeout: 30000000,
+    autoplayTimeout: 3000,
     autoplayHoverPause: true,
     center: true,
     navText: [

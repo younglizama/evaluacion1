@@ -122,8 +122,13 @@
 /* -----------------------------------------------------------------------
    TODO: Estilo Sobre Nosotros
    ----------------------------------------------------------------------- */
+.contenedor-sobre-nosotros {
+  background-color: #F7F9FA;
+  padding-bottom: 50px;
+}
+
 .contenedor-sobre-nosotros .container {
-   margin-bottom: 50px;
+  background-color: #fff;
 }
 
 .contenedor-sobre-nosotros h3 {
@@ -157,6 +162,12 @@
   max-width: 40%;
 }
 
+@media screen and (max-width:767px) {
+  .contenedor-sobre-nosotros .contenido-nosotros {
+    flex-direction: column;
+  }
+}
+
 /* -----------------------------------------------------------------------
    TODO: Estilo Servicios
    ----------------------------------------------------------------------- */
@@ -164,15 +175,13 @@
   background-color: #000000;
   text-align: center;
   color: #fff;
-  margin-bottom: 30px;
+
 }
 
 .estilo-servicios h3{
   padding-top: 20px;
   padding-bottom: 20px;
 }
-
-
 
 :root {
   --white-text: #fff;
@@ -182,18 +191,11 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 1.5rem;
-  padding: 0 1rem;
+  padding:3rem 1rem 3rem;
   justify-content: center;
   align-items: center;
   height: auto;
-  margin-bottom: 3rem;
-}
-
-.contenedor-cards .fila {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 1.5rem;
+  background-color: #F1F3F4;
 }
 
 .carta {
@@ -216,65 +218,60 @@
   justify-content: space-between;
 }
 
+.contenedor-cards .background1-left-column,
+  .contenedor-cards .background2-left-column,
+  .contenedor-cards .background3-left-column,
+  .contenedor-cards .background4-left-column,
+  .contenedor-cards .background5-left-column,
+  .contenedor-cards .background6-left-column,
+  .contenedor-cards .background7-left-column,
+  .contenedor-cards .background8-left-column,
+  .contenedor-cards .background9-left-column,
+  .contenedor-cards .background10-left-column {
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
 .contenedor-cards .background1-left-column {
   background-image: url("../img/servicios-km.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+  
 }
 
 
 .contenedor-cards .background2-left-column {
   background-image: url("../img/servicios-scanner.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .contenedor-cards .background3-left-column {
   background-image: url("../img/servicios-frenos.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .contenedor-cards .background4-left-column {
   background-image: url("../img/servicios-rectificado.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .contenedor-cards .background5-left-column {
   background-image: url("../img/servicios-tambores.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .contenedor-cards .background6-left-column {
   background-image: url("../img/servicios-embrague.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .contenedor-cards .background7-left-column {
   background-image: url("../img/servicios-culata.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .contenedor-cards .background8-left-column {
   background-image: url("../img/servicios-motor.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .contenedor-cards .background9-left-column {
-  background-image: url("../img/servicios-balanceo.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: url("../img/servicios-balanceo.jpg");;
 }
 
 .contenedor-cards .background10-left-column {
   background-image: url("../img/servicios-general.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .contenedor-cards .carta h6 {
@@ -300,13 +297,69 @@
 
 /*media queries*/
 
-@media (max-width: 1030px) {
+@media screen and (max-width: 1030px) {
   .contenedor-cards {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: auto;
   }
+}
+
+@media screen and (max-width: 538px) {
+  .carta {
+    flex-direction: column;
+  }
+
+  .contenedor-cards .left-column {
+    color: var(--white-text);
+    padding: 1rem 2rem 2rem 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .contenedor-cards .carta h6 {
+    font-size: 20px;
+    text-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+  }
+  
+  .contenedor-cards .background1-left-column {
+    background-image: url("../img/servicios-km-pantalla-pequeña.png");
+    
+  }
+  
+  .contenedor-cards .background2-left-column {
+    background-image: url("../img/servicios-scanner-pantalla-pequeña.jpg");
+  }
+  
+  .contenedor-cards .background3-left-column {
+    background-image: url("../img/servicios-frenos-pantalla-pequeña.jpg");
+  }
+  
+  .contenedor-cards .background4-left-column {
+    background-image: url("../img/servicios-rectificado-pantalla-pequeña.jpg");
+  }
+  
+  .contenedor-cards .background5-left-column {
+    background-image: url("../img/servicios-tambores-pantalla-pequeña.jpg");
+  }
+  
+  .contenedor-cards .background6-left-column {
+    background-image: url("../img/servicios-embrague-pantalla-pequeña.jpg");
+  }
+  
+  .contenedor-cards .background7-left-column {
+    background-image: url("../img/servicios-culata-pantalla-pequeña.jpg");
+  }
+  
+  .contenedor-cards .background9-left-column {
+    background-image: url("../img/servicios-balanceo-pantalla-pequeña.jpg");
+  }
+  
 }
 
 
