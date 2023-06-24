@@ -2,31 +2,106 @@
 
 } */
 
-.cont-img-flotantes {
-    width: 100%;
-    background-color: black;
-    height: 500px;
+.cont-img-nosotros {
+  position: relative;
+  z-index: 2;
+  display: flex;
 }
 
-.cont-img-flotantes h3{
-    color: aqua;
-    text-align: center;
+.cont-img-nosotros img {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+  background-size: cover;
+}
+
+.cont-img-nosotros::before {
+  /* le da efecto de sombra a la imagen*/
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+  /* Configura los valores del degradado según tus preferencias */
+  z-index: 1;
+  opacity: 0.8;
 
 }
 
-.estilo-servicios {
-    background-color: #272727;
+/* .estilo-servicios {
+  background-color: #000000;
+  text-align: center;
+  color: white;
+}
+
+.estilo-servicios h3 {
+  color: #FFFBF7;
+  padding-top: 25px;
+  padding-bottom: 20px;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 0;
+} */
+
+/* -----------------------------------------------------------------------
+   TODO: Sobre nosotros
+   ----------------------------------------------------------------------- */
+  .estilo-nosotros {
+    background-color: green;
     text-align: center;
     color: white;
+    align-items: center;
+  }
+
+  .titulo-nosotros {
+    text-align: center;
   }
   
-  .estilo-servicios h3 {
+  .titulo-nosotros h3 {
     color: #FFFBF7;
-    padding-top: 25px;
-    padding-bottom: 20px;
+    padding: 2rem 0;
     font-size: 25px;
     font-weight: bold;
+    margin: 0;
   }
 
+.cont-nosotros {
+  background-color: #000000;
+  color: #ffffffff;
+  padding: 1rem;
+  /* display: flex; */
+}
+ 
+.cont-nosotros .fila-nosotros {
+  display: flex;
+  margin: 2rem;
+  background-color: red;
+  width: auto;
+  vertical-align: middle;
+}
 
+.cont-nosotros .fila-nosotros .col-imagen {
+  width: 30%;
+  height: auto;
+}
 
+.cont-nosotros .fila-nosotros .col-imagen img{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  border-radius: 1rem;
+
+}
+
+.cont-nosotros .fila-nosotros .col-imagen.derecha {
+  order: 1;
+}
+
+.cont-nosotros .fila-nosotros .col-texto {
+  width: 50%;
+  padding: 2rem;
+  height: auto;
+}

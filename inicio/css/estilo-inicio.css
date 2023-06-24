@@ -230,18 +230,18 @@
 }
 
 .contenedor-cards .background1-left-column,
-  .contenedor-cards .background2-left-column,
-  .contenedor-cards .background3-left-column,
-  .contenedor-cards .background4-left-column,
-  .contenedor-cards .background5-left-column,
-  .contenedor-cards .background6-left-column,
-  .contenedor-cards .background7-left-column,
-  .contenedor-cards .background8-left-column,
-  .contenedor-cards .background9-left-column,
-  .contenedor-cards .background10-left-column {
-    background-repeat: no-repeat;
-    background-size: cover;
-    }
+.contenedor-cards .background2-left-column,
+.contenedor-cards .background3-left-column,
+.contenedor-cards .background4-left-column,
+.contenedor-cards .background5-left-column,
+.contenedor-cards .background6-left-column,
+.contenedor-cards .background7-left-column,
+.contenedor-cards .background8-left-column,
+.contenedor-cards .background9-left-column,
+.contenedor-cards .background10-left-column {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .contenedor-cards .background1-left-column {
   background-image: url("../img/servicios-km.png");
