@@ -124,7 +124,7 @@
    ----------------------------------------------------------------------- */
 .contenedor-sobre-nosotros {
   background-color: #F7F9FA;
-  padding-bottom: 50px;
+  padding-bottom: 40px;
 }
 
 .contenedor-sobre-nosotros .container {
@@ -136,7 +136,7 @@
 }
 
 .contenedor-sobre-nosotros .contenido-nosotros {
-  padding-top: 0;
+  padding: 0 0 30px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -147,25 +147,36 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
+  margin: 2rem;
 }
 
 .contenedor-sobre-nosotros .cont-img-nosotros {
   display: flex;
   height: 100%;
   width: 100%;
-  padding-left: 50px;
-  justify-content: center;
+  
 }
 
 .contenedor-sobre-nosotros .cont-img-nosotros img {
-  max-height: auto;
-  max-width: 40%;
+  height: auto;
+  max-width: 100%;
 }
 
 @media screen and (max-width:767px) {
   .contenedor-sobre-nosotros .contenido-nosotros {
     flex-direction: column;
   }
+  
+  .contenedor-sobre-nosotros .cont-img-nosotros {
+      padding: 0 3rem;
+  }
+  
+}
+
+@media screen and (max-width: 575px) {
+  .contenedor-sobre-nosotros .cont-img-nosotros {
+    padding: 0 1rem;
+}
 }
 
 /* -----------------------------------------------------------------------
