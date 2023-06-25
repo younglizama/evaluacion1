@@ -31,26 +31,11 @@
 
 }
 
-/* .estilo-servicios {
-  background-color: #000000;
-  text-align: center;
-  color: white;
-}
-
-.estilo-servicios h3 {
-  color: #FFFBF7;
-  padding-top: 25px;
-  padding-bottom: 20px;
-  font-size: 25px;
-  font-weight: bold;
-  margin: 0;
-} */
-
 /* -----------------------------------------------------------------------
    TODO: Sobre nosotros
    ----------------------------------------------------------------------- */
   .estilo-nosotros {
-    background-color: green;
+    background-color: #272727;
     text-align: center;
     color: white;
     align-items: center;
@@ -62,46 +47,167 @@
   
   .titulo-nosotros h3 {
     color: #FFFBF7;
-    padding: 2rem 0;
-    font-size: 25px;
+    padding: 1.5rem 0;
+    font-size: 1.5rem;
     font-weight: bold;
     margin: 0;
   }
+
+/* TODO: PARTE NEGRA CONTACTO SOBRE NOSOTROS*/
 
 .cont-nosotros {
   background-color: #000000;
   color: #ffffffff;
   padding: 1rem;
-  /* display: flex; */
 }
  
 .cont-nosotros .fila-nosotros {
   display: flex;
   margin: 2rem;
-  background-color: red;
-  width: auto;
-  vertical-align: middle;
+  background-color: #000000;
+  justify-content: center;
+  align-items: middle;
 }
 
 .cont-nosotros .fila-nosotros .col-imagen {
   width: 30%;
   height: auto;
+  border-radius: 1rem 0 0 1rem;
+  overflow: hidden;
 }
 
 .cont-nosotros .fila-nosotros .col-imagen img{
   width: 100%;
   height: auto;
-  overflow: hidden;
-  border-radius: 1rem;
-
+  object-fit: cover; /* Ajusta el tamaño de la imagen */
 }
 
 .cont-nosotros .fila-nosotros .col-imagen.derecha {
   order: 1;
+  width: 30%;
+  height: auto;
+  border-radius: 0rem 1rem 1rem 0;
+  overflow: hidden;
 }
 
 .cont-nosotros .fila-nosotros .col-texto {
   width: 50%;
   padding: 2rem;
   height: auto;
+  background-color: aqua;
+  border-radius: 0 1rem 1rem 0;
+}
+
+.cont-nosotros .fila-nosotros .col-texto.izquierda {
+  border-radius: 1rem 0 0 1rem;
+}
+
+@media screen and (max-width: 1199px) {
+
+  .cont-nosotros .fila-nosotros .col-imagen img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 992px) {
+
+  .cont-nosotros {
+    display: flex;
+    justify-content: center;
+  }
+
+  .cont-nosotros .container {
+    display: flex; /* importante para que se vea uno al lado del otro*/
+    padding: 0;
+    margin: 0;
+  }
+
+  .cont-nosotros .fila-nosotros {
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+    vertical-align: middle;
+    align-items: center
+  }
+
+  .cont-nosotros .fila-nosotros .col-imagen img{
+    width: 90%;
+  }
+
+  .cont-nosotros .fila-nosotros .col-imagen,
+  .cont-nosotros .fila-nosotros .col-imagen.derecha {
+    order: 1;
+    width: 100%;
+    border-radius: 0;
+    justify-content: center;
+  }
+  
+  .cont-nosotros .fila-nosotros .col-texto.izquierda,
+  .cont-nosotros .fila-nosotros .col-texto {
+    width: 100%;
+    border-radius: 0;
+    padding: 1rem;
+  } 
+}
+
+@media screen and (max-width:767px) {
+  .cont-nosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .cont-nosotros .container {
+    width: initial;
+    padding-right: inherit;
+    padding-left: inherit;
+    margin-right: auto;
+    margin-left: auto;
+    display: initial;
+  }
+
+  .cont-nosotros .fila-nosotros {
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+    vertical-align: middle;
+    align-items: center;
+    padding-bottom: 1rem;
+  }
+
+  .cont-nosotros .fila-nosotros .col-imagen img{
+    width: 100%;
+  }
+
+  .cont-nosotros .fila-nosotros .col-imagen,
+  .cont-nosotros .fila-nosotros .col-imagen.derecha {
+    
+    width: 100%;
+    border-radius: 0;
+  }
+  
+  .cont-nosotros .fila-nosotros .col-texto.izquierda,
+  .cont-nosotros .fila-nosotros .col-texto {
+    width: 100%;
+    border-radius: 0;
+    padding: 2rem;
+  } 
+}
+
+/* -----------------------------------------------------------------------
+   TODO: Estilo Colaboraciones
+   ----------------------------------------------------------------------- */
+
+.estilo-colaboraciones {
+  background-color: #272727;
+  text-align: center;
+}
+
+.estilo-colaboraciones h3 {
+  padding: 1.5rem 0;
+  font-size: 1.5rem;
+  color: white;
+  font-weight: bold;
 }
