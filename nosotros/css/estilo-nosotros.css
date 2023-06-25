@@ -96,10 +96,12 @@
   height: auto;
   background-color: #1f1e1e;
   border-radius: 0 1rem 1rem 0;
+  color: #C3CFCF
 }
 
 .cont-nosotros .fila-nosotros .col-texto h3{
   padding-bottom: 1rem;
+  color: #FFFBF7;
 }
 
 .cont-nosotros .fila-nosotros .col-texto.izquierda {
@@ -220,4 +222,48 @@
   font-size: 1.5rem;
   color: white;
   font-weight: bold;
+}
+
+.cont-serv-general {
+  color: #000000;
+  padding: 20px;
+}
+
+.cont-serv-general .container{
+  padding-right: 10px;
+  padding-left: 5px;
+
+}
+
+.general-columna {
+  margin-bottom: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.cont-serv-general h3 {
+  margin: 0 0 12px;
+}
+
+.cont-serv-general .p-4 {
+  padding: 20px;
+}
+
+.estilo-imagen-servicios {
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding-top: 20px; 
+}
+
+@media (max-width: 575px) {
+  .general-columna {
+    border-top: 1px solid #dfd9d9;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .cont-serv-general {
+    padding-top: 0;
+  }
 }
