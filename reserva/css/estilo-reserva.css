@@ -1,3 +1,36 @@
+.cont-img-reserva {
+  position: relative;
+  z-index: 2;
+  display: flex;
+}
+.cont-img-reserva img {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+  background-size: cover;
+}
+
+.cont-img-reserva::before {
+  /* le da efecto de sombra a la imagen*/
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+  /* Configura los valores del degradado según tus preferencias */
+  z-index: 1;
+  opacity: 0.8;
+
+}
+
+
+/* -----------------------------------------------------------
+    TODO: ESTILO RESERVA
+   -----------------------------------------------------------*/
+
 .contenedor-reserva {
   padding: 30px;
   height: auto;
@@ -5,35 +38,42 @@
   position: relative;
 }
 
+/* TODO: Reserva parte del texto y servicios */
+
 .contenedor-reserva .cont-res-superior { /* Contenedor reserva superior*/
   display: flex;
   justify-content: space-between;
 }
 
-.contenedor-reserva .cont-res-superior .cont-res-revision h3 span{
+.contenedor-reserva .cont-res-superior .cont-res-texto h3 span{
   padding-right: 10px;
   font-size: 20px;
   
 }
 
-.contenedor-reserva .cont-res-superior .cont-res-revision h3{
+.contenedor-reserva .cont-res-superior .cont-res-texto h3{
   color: white;
 }
 
-.contenedor-reserva .cont-res-superior .cont-res-revision p{
+.contenedor-reserva .cont-res-superior .cont-res-texto p{
   color: white;
 }
+
+/* TODO: Estilo servicios */
 
 .contenedor-reserva .cont-res-superior .cont-res-servicios {
   background-color: red;
   position: absolute;
   height: auto;
   z-index: 2;
+  line-height: 1;
 }
 
 .contenedor-reserva .cont-res-superior .cont-res-servicios ul {
   list-style: none;
   padding: 0;
+  margin: 0;
+  font-size: 0.9rem;
 }
 
 .contenedor-reserva .cont-res-superior .cont-res-servicios ul li{
@@ -41,31 +81,77 @@
   flex-direction: column;
 }
 
+.contenedor-reserva .cont-res-superior .cont-res-servicios ul li h4{
+  text-align: center;
+}
+
+/* TODO: Estilo bloques para agendar reservas */
+
 .contenedor-reserva .cont-res-inferior {
   background-color: #333333;
   height: 100%;
-  padding: 40px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.contenedor-reserva .cont-res-inferior .fila1-reserva,
+.contenedor-reserva .cont-res-inferior .fila2-reserva {
+  background-color: aqua;
+  margin: 0.5rem 0 0 0;
 }
 
 .contenedor-reserva .cont-res-inferior .cuadrado-reserva {
   background-color: yellow;
-  position: relative;
-  width: 50px;
-  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .contenedor-reserva .cont-res-inferior .cuadrado-reserva p {
   color: red;
-  margin-bottom: 1rem;
+  margin: 0;
 }
 
-.contenedor-reserva .cont-res-inferior .cuadrado-reserva p {
-  color: red;
+ /* 2 bloques verticales */
+
+.contenedor-reserva .cont-res-inferior .fila1-reserva {
+  padding: 1rem 0 1rem 0;
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.contenedor-reserva .cont-res-inferior #reserva-f.cuadrado-reserva p{
-  margin-bottom: 0;
+.contenedor-reserva .cont-res-inferior .fila1-reserva .cuadrado-reserva {
+  height: 18rem;
+  width: 8rem;
 }
+
+
+/* 4 Bloques horizontales */
+
+.contenedor-reserva .cont-res-inferior .fila2-reserva {
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+
+.contenedor-reserva .cont-res-inferior .fila2-reserva .cuadrado-reserva {
+  justify-content: flex-end;
+  width: 18rem;
+  height: 7.5rem;
+  margin: 1rem;
+  padding: 0.5rem;
+}
+
+/*-----------------------------------------------------------
+  TODO: Estilo MODAL
+  -----------------------------------------------------------*/ 
+
+.modal {
+  
+}
+
+
+
 
 
 

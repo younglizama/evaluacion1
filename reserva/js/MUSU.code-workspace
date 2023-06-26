@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "../../.."
+		},
+		{
+			"path": "../../../../../../ProyectoDjango"
+		},
+		{
+			"path": "../../../../Python"
+		},
+		{
+			"path": "../../../../GitHub Pruebas"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "MUSU",
+		"liveServer.settings.port": 5501
+	}
+}
