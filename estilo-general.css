@@ -607,7 +607,7 @@ header.hidden {   /* Oculta el NAVBAR */
     position: fixed;
     top: 55%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); /* centra */
     z-index: 3; 
 }
 
@@ -618,7 +618,6 @@ header.hidden {   /* Oculta el NAVBAR */
     position: relative;
     width: 400px;
     height: 440px;
-    background: transparent;
     border: 4px solid rgba(199, 49, 49, 2);
     background-color: #ffffff;
     border-radius: 20px;
@@ -632,11 +631,10 @@ header.hidden {   /* Oculta el NAVBAR */
 }
 
 .wrapper.active-popup {
-    transform: scale(1);
-    display: flex;
+    transform: scale(1); /* Muestra el login */
 }
 
-.wrapper.active {
+.wrapper.active { /* Menu registrarse*/
     height: 520px;
 }
 
