@@ -71,14 +71,16 @@
 
 .contenedor-reserva .cont-res-superior .cont-res-servicios ul {
   list-style: none;
-  padding: 0;
   margin: 0;
   font-size: 0.9rem;
+  padding:0 0.5rem 0 0.5rem;
 }
 
 .contenedor-reserva .cont-res-superior .cont-res-servicios ul li{
   display: flex;
   flex-direction: column;
+  display: flex;
+  justify-content: center;
 }
 
 .contenedor-reserva .cont-res-superior .cont-res-servicios ul li h4{
@@ -88,7 +90,7 @@
 /* TODO: Estilo bloques para agendar reservas */
 
 .contenedor-reserva .cont-res-inferior {
-  background-color: #333333;
+  background-color: #546d802d;
   height: 100%;
   padding: 1rem;
   display: flex;
@@ -97,21 +99,31 @@
 
 .contenedor-reserva .cont-res-inferior .fila1-reserva,
 .contenedor-reserva .cont-res-inferior .fila2-reserva {
-  background-color: aqua;
+  
   margin: 0.5rem 0 0 0;
 }
 
 .contenedor-reserva .cont-res-inferior .cuadrado-reserva {
-  background-color: yellow;
+  background-color: #ff00ff67;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+.contenedor-reserva .cont-res-inferior .cuadrado-reserva img {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+
+}
+
 .contenedor-reserva .cont-res-inferior .cuadrado-reserva p {
   color: red;
   margin: 0;
+  z-index: 2;
 }
+
+
 
  /* 2 bloques verticales */
 
@@ -140,6 +152,27 @@
   height: 7.5rem;
   margin: 1rem;
   padding: 0.5rem;
+}
+
+@media screen and (max-width: 860px) {
+  .contenedor-reserva .cont-res-superior .cont-res-servicios {
+    display: none;
+  }
+  
+  /* .contenedor-reserva .cont-res-superior .cont-res-servicios ul {
+    list-style: none;
+    margin: 0;
+    font-size: 0.9rem;
+    padding:0 0.5rem 0 0.5rem;
+  }
+  
+  .contenedor-reserva .cont-res-superior .cont-res-servicios ul li{
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+  }
+   */
 }
 
 /*-----------------------------------------------------------
