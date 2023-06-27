@@ -17,6 +17,7 @@
     /* width: 60%; */
     width: 100%;
     transition: .3s;
+    margin-bottom: 2rem;
 }
 .contenedor .contenedor-items .item{
     background-color: #ffffff;
